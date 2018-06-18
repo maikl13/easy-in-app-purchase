@@ -4,14 +4,7 @@ apply plugin: 'com.android.application'
 
 
 android {
-    signingConfigs {
-        config {
-            keyAlias 'Upload'
-            keyPassword '123456Pass'
-            storeFile file('D:/برامج/برمجة للتعلم/android/مشاريع/مستقل/Immigrants/key/key.jks')
-            storePassword '123456Pass'
-        }
-    }
+
     compileSdkVersion 27
 
     defaultConfig {
@@ -30,10 +23,10 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.config
+
         }
         debug {
-            signingConfig signingConfigs.config
+
         }
     }
 }
