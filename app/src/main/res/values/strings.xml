@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">Trivial Drive v2</string>
+
+    <string name="alert_already_purchased">Item is already purchased</string>
+
+    <string name="button_purchase">Purchase</string>
+    <string name="button_buy">Buy</string>
+    <string name="button_own">Own</string>
+
+    <string name="content_desc_free_vs_premium_indicator">Free or Premium Image Indicator</string>
+</resources>
