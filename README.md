@@ -25,7 +25,7 @@ allprojects {
 Add this to ``` build.gradle ``` Module:app
 
 ```
-implementation 'com.github.maikl13:easy-in-app-purchase:1.2.0'
+implementation 'com.github.maikl13:easy-in-app-purchase:1.3.0'
 ```
 
 for maven usage 
@@ -33,7 +33,7 @@ for maven usage
 <dependency>
   <groupId>com.github.maikl13</groupId>
   <artifactId>easy-in-app-purchase</artifactId>
-  <version>1.0.0</version>
+  <version>1.3.0</version>
 </dependency>
 ```
 

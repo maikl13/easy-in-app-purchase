@@ -1,12 +1,12 @@
 package com.billing.simple.main;
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import com.android.billingclient.api.BillingClient;
 import com.billing.simple.BillingManager;
 import com.billing.simple.BillingProvider;
 
 import static com.android.billingclient.api.BillingClient.BillingResponse;
-public abstract class BillingActivity extends Activity implements BillingProvider {
+public abstract class BillingActivity extends AppCompatActivity implements BillingProvider {
     public static final String LAST_SKU_KEY = "lastSku";
     private static final String BILLING_SHARED_KEY = "Billing";
     private BillingManager mBillingManager;
