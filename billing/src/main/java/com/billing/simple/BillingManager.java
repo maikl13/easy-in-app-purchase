@@ -46,7 +46,7 @@ public abstract  class BillingManager implements PurchasesUpdatedListener {
 
     private int mBillingClientResponseCode = BILLING_MANAGER_NOT_INITIALIZED;
 
-public abstract String getDeveloperKey();
+    public abstract String getDeveloperKey();
 
 
     public interface BillingUpdatesListener {
@@ -102,7 +102,7 @@ public abstract String getDeveloperKey();
 
 
     public void initiatePurchaseFlow(final String skuId, final ArrayList<String> oldSkus,
-            final @SkuType String billingType) {
+                                     final @SkuType String billingType) {
         Runnable purchaseFlowRequest = new Runnable() {
             @Override
             public void run() {

@@ -5,10 +5,17 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 27
-
+    signingConfigs {
+        config {
+            keyAlias 'Upload'
+            keyPassword '123456Pass'
+            storeFile file('D:/برامج/برمجة للتعلم/android/مشاريع/مستقل/Immigrants/key/key.jks')
+            storePassword '123456Pass'
+        }
+    }
     defaultConfig {
         multiDexEnabled true
-        minSdkVersion 16
+        minSdkVersion 14
         targetSdkVersion 27
         versionCode 15
         versionName "15.0"
@@ -22,10 +29,10 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-
+            signingConfig signingConfigs.config
         }
         debug {
-
+            signingConfig signingConfigs.config
         }
     }
 }
