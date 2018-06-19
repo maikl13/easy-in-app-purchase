@@ -25,7 +25,7 @@ allprojects {
 Add this to ``` build.gradle ``` Module:app
 
 ```
-implementation 'com.github.maikl13:easy-in-app-purchase:1.1.0'
+implementation 'com.github.maikl13:easy-in-app-purchase:1.2.0'
 ```
 
 for maven usage 

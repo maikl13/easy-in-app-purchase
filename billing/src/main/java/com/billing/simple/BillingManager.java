@@ -1,22 +1,14 @@
 
 package com.billing.simple;
-
 import android.app.Activity;
 import android.content.Context;
 import android.util.Log;
-import com.android.billingclient.api.BillingClient;
+import com.android.billingclient.api.*;
 import com.android.billingclient.api.BillingClient.BillingResponse;
 import com.android.billingclient.api.BillingClient.FeatureType;
 import com.android.billingclient.api.BillingClient.SkuType;
-import com.android.billingclient.api.BillingClientStateListener;
-import com.android.billingclient.api.BillingFlowParams;
-import com.android.billingclient.api.ConsumeResponseListener;
-import com.android.billingclient.api.Purchase;
 import com.android.billingclient.api.Purchase.PurchasesResult;
-import com.android.billingclient.api.PurchasesUpdatedListener;
-import com.android.billingclient.api.SkuDetails;
-import com.android.billingclient.api.SkuDetailsParams;
-import com.android.billingclient.api.SkuDetailsResponseListener;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
